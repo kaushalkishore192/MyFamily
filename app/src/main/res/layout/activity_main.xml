@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/image_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:textSize="50dp"
+        android:padding="10dp">
+
+    </EditText>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_below="@id/image_name_tv"
+        android:id="@+id/image_view_im"
+        android:src="@drawable/defaut_image"
+        android:padding="10dp">
+
+    </ImageView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectFromFiles"
+        android:onClick="selectFromFiles"
+        android:text="Select From Files"
+        android:textSize="20dp"
+        android:layout_below="@id/image_view_im"
+        android:padding="10dp"
+        >
+
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectFromCamera"
+        android:onClick="selectFromCamera"
+        android:padding="10dp"
+        android:text="Open Camere"
+        android:textSize="20dp"
+        android:layout_below="@id/selectFromFiles"
+        >
+
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectFromCamera"
+        android:layout_centerHorizontal="true"
+        android:text="save"
+        android:textSize="20dp"
+        android:id="@+id/save_btn"
+        android:onClick="saveButtonClicked"
+        >
+
+    </Button>
+
+</RelativeLayout>
